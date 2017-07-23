@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PebblesRipples</string>
+    <string-array name="items">
+        <item>Guest</item>
+        <item>Service</item>
+    </string-array>
+</resources>
