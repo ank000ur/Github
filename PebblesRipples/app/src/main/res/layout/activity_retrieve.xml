@@ -7,5 +7,84 @@
     tools:context="com.examples.shubu.pebblesripples.Retrieve">
 
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Complaint Page"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_marginTop="46dp"
+        android:text="Car Number"
+        android:layout_below="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editnumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:textSize="17dp"
+        android:text="Reason"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/editreason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignStart="@+id/editnumber1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="17dp"
+         />
+
+    <Button
+        android:id="@+id/requestbutton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editreason"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Request Admin" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:textSize="17dp"
+        android:text="Status"
+        android:layout_below="@+id/requestbutton1"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editreason"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_marginStart="11dp"
+        android:text="......" />
 </RelativeLayout>

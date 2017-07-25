@@ -119,5 +119,14 @@
         android:layout_marginTop="59dp"
         android:text="Add Visitor" />
 
+    <Button
+        android:id="@+id/complaintbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint Page"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginBottom="13dp" />
+
 
 </RelativeLayout>

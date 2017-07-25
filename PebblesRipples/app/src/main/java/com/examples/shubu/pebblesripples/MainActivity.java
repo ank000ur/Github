@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText name,pno,cno;
     EditText address;
     Spinner purpose;
-    private Button add;
+    private Button add,complaint;
     private Firebase mRef, mRootRef,mRootRef1,mRootRef2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
         purpose= (Spinner) findViewById(R.id.spinnerpurpose);
 
         add= (Button) findViewById(R.id.addbutton);
+        complaint= (Button) findViewById(R.id.complaintbutton);
+
+        complaint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Retrieve.class));
+            }
+        });
         mRootRef = new Firebase("https://pebblesripples.firebaseio.com");
 
         add.setOnClickListener(new View.OnClickListener() {
@@ -70,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
                     mRefChild6.setValue(id);
 
                     Toast.makeText(MainActivity.this,"Data Added Successfully !!",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(),Retrieve.class));
+                   // startActivity(new Intent(getApplicationContext(),Retrieve.class));
+
 
                 }
 
